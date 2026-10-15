@@ -8,8 +8,7 @@ For 15 minutes the agent uses a Windows desktop the way a real employee would: i
 The purpose is defensive: generating realistic, *benign* user activity so that security monitoring and cyber-range exercises have believable background noise to work with.
 
 <!-- Replace with the YouTube / Vimeo link once uploaded -->
-**Demo video:** _coming soon_
-
+**Demo video:** https://www.youtube.com/watch?v=TbNz1lu1Ewc
 ---
 
 ## What it does
