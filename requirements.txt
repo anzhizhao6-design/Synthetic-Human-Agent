@@ -1,0 +1,5 @@
+pyautogui
+uiautomation
+opencv-python
+pillow
+pytesseract
