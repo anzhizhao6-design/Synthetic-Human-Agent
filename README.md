@@ -135,7 +135,17 @@ Before and during the run:
 | **Event Viewer → Sysmon → Operational** | Filter **Event ID 1** (process creation) and check `Image`, `ParentImage` and `CommandLine` for each app the agent opened. |
 | **Documents folder** | `Email_Draft_<n>.odt` and `Data_<n>.ods` exist and contain the typed content. |
 
-<!-- Add screenshots here, e.g. docs/process-tree.png and docs/sysmon-eid1.png -->
+### Screenshots from a run on the competition VM
+
+**Chrome launched by the agent sits directly under `explorer.exe`**, the same as when a user opens it from the Start menu:
+
+![Process Explorer: chrome.exe under explorer.exe](docs/process-tree-chrome.png)
+
+**OpenOffice Calc** (`scalc.exe → soffice.exe → soffice.bin`) is also a child of `explorer.exe`, not of the agent's `python.exe`:
+
+![Process Explorer: OpenOffice Calc under explorer.exe](docs/process-tree-openoffice.png)
+
+The agent itself is the separate `py.exe → python.exe` branch; none of the apps it opens appear underneath it. CPU use of `python.exe` stays near zero between actions.
 
 ---
 
